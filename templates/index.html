@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    </head>
+    <body>
+        <h1>This is a test</h1>
+        {% for d in data %}
+            <p>{{d[0]}}</p>
+            <p>{{d[1]}}</p>
+        {% endfor %}
+    </body>
+</html>
